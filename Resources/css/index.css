@@ -1,0 +1,164 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Fahkwang', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    color: rgb(49, 49, 49);
+    padding: 0.6rem 0;;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcyan;
+    font-weight: 300;
+}
+.logo {
+    margin-left: 20px;
+    font-size: 2rem;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header .menu{
+    width: 60px;
+    margin-right: 50px;
+}
+.nav-mobile, .menu{
+    display: none;
+}
+@media only screen and (max-width:860px){
+    header .desktop{
+        display: none;
+    }
+    .logo{
+        font-size: 3rem;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-mobile{
+        position: fixed;
+        top:0;
+        z-index: 5;
+        background-color:lightcyan;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .nav-mobile a{
+        text-decoration: none;
+        color: inherit;
+        margin-right: 20px;
+        line-height: 2.5;
+    }
+    .nav-mobile ul{list-style: none;
+    }
+}
+/* Main */
+/* Mission */
+main{
+    margin-top: 7rem;
+}
+#mission{
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2%;
+    width: 100%;
+}
+@media only screen and (max-width:860px){
+    main{
+        margin-top: 10rem;
+    }
+}
+@media only screen and (max-width:600px){
+    section h1{
+        font-size: 2.5rem;
+    }
+}
+/* Products */
+.title h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    border-bottom: 2px solid lightsteelblue;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+/* Team */
+.team{
+    width: 30%;
+}
+.team img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 800px){
+    figure, .team{
+        width: 100%;
+    }
+    figure img, .team img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+/*Footer*/
