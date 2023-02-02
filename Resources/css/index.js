@@ -12,6 +12,6 @@ function toggleMenu() {
 
 menuBox.addEventListener('click', toggleMenu);
 
-[].forEach.call(document.querySelectorAll('.list-menu'), function (el) {
+[].forEach.call(document.querySelectorAll('.nav-mobile'), function (el) {
     el.addEventListener('click', toggleMenu);
     });

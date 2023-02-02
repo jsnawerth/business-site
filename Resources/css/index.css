@@ -12,7 +12,6 @@ body{
 /* Header */
 header{
     color: rgb(49, 49, 49);
-    padding: 0.6rem 0;;
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,11 +19,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightcyan;
+    background-color: #F5EBE0;
     font-weight: 300;
 }
 .logo {
-    margin-left: 20px;
+    margin: 15px 50px;
     font-size: 2rem;
 }
 header ul{
@@ -32,17 +31,17 @@ header ul{
     display: flex;
 }
 header a{
-    margin-right: 40px;
+    margin-right: 50px;
     text-decoration: none;
     color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 header a:hover{
     text-decoration: underline;
 }
 header .menu{
-    width: 60px;
+    width: 40px;
     margin-right: 50px;
 }
 .nav-mobile, .menu{
@@ -52,9 +51,6 @@ header .menu{
     header .desktop{
         display: none;
     }
-    .logo{
-        font-size: 3rem;
-    }
     .menu{
         display: block;
     }
@@ -62,7 +58,7 @@ header .menu{
         position: fixed;
         top:0;
         z-index: 5;
-        background-color:lightcyan;
+        background-color:#F5EBE0;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -82,7 +78,7 @@ header .menu{
 /* Main */
 /* Mission */
 main{
-    margin-top: 7rem;
+    margin-top: 4.5rem;
 }
 #mission{
     background-image: url(../img/bg-1.jpg);
@@ -98,14 +94,9 @@ section h1{
     text-transform: capitalize;
     text-align: center;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(254, 252, 243, 0.8);
     padding: 2%;
     width: 100%;
-}
-@media only screen and (max-width:860px){
-    main{
-        margin-top: 10rem;
-    }
 }
 @media only screen and (max-width:600px){
     section h1{
@@ -117,7 +108,7 @@ section h1{
     text-align: center;
     font-size: 2rem;
     padding: 2rem;
-    border-bottom: 2px solid lightsteelblue;
+    border-bottom: 2px solid #F0DBDB;
 }
 .container{
     display: flex;
@@ -137,7 +128,7 @@ figcaption {
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #FEFCF3;
     padding: 10px;
 }
 /* Team */
@@ -160,5 +151,59 @@ figcaption {
         object-fit: cover;
     }
 }
+/* Contact */
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border: 1px #F0DBDB solid;
+    padding:30px;
+}
+.left-item textarea,.left-item .name, .left-item .email, .left-item select, .left-item .subject {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px #F0DBDB solid;
+}
+.btn-primary{
+    padding: 10px;
+    background-color: #F5EBE0;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background-color: #dfd4c8;
+}
+.right-item{
+    background-color: #F5EBE0;
+    padding: 30px 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+}
 
+@media only screen and (max-width: 890px){
+    .right-item{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 350px;
+    }
+    .form{
+        border: none;
+    }
+}
 /*Footer*/
+footer{
+    background-color: #DBA39A;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
